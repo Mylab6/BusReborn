@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.androiddream.buslabs">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.google.android.gms.location.sample.basiclocationsample" >
+
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    </manifest>
+
+    <application
+
+        tools:replace="android:icon"
+        android:icon="@mipmap/ic_bus_black"
+        android:allowBackup="true"
+
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+
+
+            android:name="com.orm.SugarApp">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_api_key"/>
+
+        <meta-data tools:replace="android:value" android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+            <meta-data android:name="DATABASE" android:value="sugar_example.db" />
+            <meta-data android:name="VERSION" android:value="2" />
+            <meta-data android:name="QUERY_LOG" android:value="true" />
+            <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="com.example" />
+
+
+
+
+        <activity
+            android:launchMode="singleTop"
+
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+          tools:replace="android:theme"
+
+            android:theme="@android:style/Theme.WithActionBar" />
+    </application>
+
+</manifest>

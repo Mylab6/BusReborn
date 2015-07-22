@@ -141,20 +141,7 @@ public class BusGet {
              BusCurrent newBus = new BusCurrent() ;
                 newBus.id = i ;
 
-// Data will come back like this
-                                /*
 
-                                {"items": [{"block_id": "0205911", "run_id": "20_259_0",
-                                "seconds": 1358.0, "is_departing": false, "route_id": "20", "minutes": 22.0},
-                                 {"block_id": "0205611", "run_id": "20_259_0", "seconds": 3179.0, "is_departing": false,
-                                 "route_id": "20", "minutes": 52.0},
-                                  {"block_id": "0205711",
-                                  "run_id": "20_259_0", "seconds": 4861.0,
-                                  "is_departing": false, "route_id": "20", "minutes": 81.0}]}
-
-
-
-                                */
              try {
                  newBus.requestedAt = DateO ;
                  JSONObject BusOb = (JSONObject) response.get(i);
